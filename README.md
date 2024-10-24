@@ -153,7 +153,7 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 
 ---
 
-("C:\Users\praky\Downloads\Churn_Analysis Summary.png")
+
 
 
 
