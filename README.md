@@ -52,6 +52,41 @@ No. of rows=6419, No. of columns=32. The dataset consists of customer informatio
 7.Created a new custom column ```Churn_Status``` and changed the datatype to Whole Number.
 ```dax
 if [Customer_Status] = "Churned" then 1 else 0
+```
+8.Created a new custom column ```Monthly_Charge_Status.```
+``` dax
+if [Monthly_Charge] < 20 then "<20"
+  else if [Monthly_Charge] < 50 then "20-50"
+  else if [Monthly_Charge] < 100 then "50-100"
+  else ">100"
+```
+9.Created a new table ```mapping_AgeGrp``` by referencing the ```prod_Churn``` table and removed all other columns except Age column and removed duplicates from Age column.
+10.Created a new custom column Age_Group in mapping_AgeGrp table.
+``` dax
+if [Age] < 20 then "<20"
+  else if [Age] < 35 then "20-35"
+  else if [Age] < 50 then "35-50"
+  else ">50"
+```
+11.Created a new custom column ```AgeGrpSorting``` in ```mapping_AgeGrp``` table and changed datatype to Whole Number.
+``` dax
+ if [Age_Group] = "<20" then 1
+  else if [Age_Group] = "20-35" then 2
+  else if [Age_Group] = "35-50" then 3
+  else 4
+```
+12.Created a new table ```mapping_TenureGrp``` by referncing the ```prod_Churn``` table and removed all other columns except Tenure_in_Months column and removed duplicates.
+13.Created a new custom column ```Tenure_Group``` in ```mapping_TenureGrp``` table.
+``` dax
+if [Tenure_in_Months] < 6 then "< 6 Months"
+  else if [Tenure_in_Months] < 12 then "6-12 Months"
+  else if [Tenure_in_Months] < 18 then "12-18 Months"
+  else if [Tenure_in_Months] < 24 then "18-24 Months"
+  else ">= 24 Months"
+```
+
+
+
 
 
 
