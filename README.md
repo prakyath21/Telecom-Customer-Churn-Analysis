@@ -149,9 +149,13 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 31.Created a Power BI report ```Churn Analysis - Prediction``` using various visualizations.
 
 ---
-#PowerBI Dashboard
+## PowerBI Dashboard
 
 ---
+![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Churn_Analysis%20Summary.png?raw=true)
+
+![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Churn_Analysis_Prediction.png?raw=true)
+
 
 
 
