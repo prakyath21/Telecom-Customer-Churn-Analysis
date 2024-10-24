@@ -84,6 +84,52 @@ if [Tenure_in_Months] < 6 then "< 6 Months"
   else if [Tenure_in_Months] < 24 then "18-24 Months"
   else ">= 24 Months"
 ```
+14.Created a new custom column ```TenureGrpSorting``` in 'mapping_TenureGrp` table and changed the datatype to Whole Number.
+``` dax
+if [Tenure_Group] = "< 6 Months" then 1
+  else if [Tenure_Group] = "6-12 Months" then 2
+  else if [Tenure_Group] = "12-18 Months" then 3
+  else if [Tenure_Group] = "18-24 Months" then 4
+  else 5
+```
+15.Created a new table ```prod_Services``` by referencing ```prod_Churn``` table and unpivoted the columns - Phone_Service, Multiple_Lines, Internet_Service, Online_Security, Online_Backup, Device_Protection_Plan, Premium_Support, Streaming_TV, Streaming_Movies, Streaming_Music, Unlimited_Data, Paperless_Billing.
+16.After transforming the data, data is loaded into the Power BI Desktop.
+17.Created a new table ```tbl_Measures``` to store all the measures we will create.
+18.Created a new measure ```Total Customers``` using DAX formula.
+``` dax
+Total Customers = COUNT(prod_Churn[Customer_ID])
+```
+19.Created a new measure New Joiners using DAX formula.
+``` dax
+New Joiners = CALCULATE(COUNT(prod_Churn[Customer_ID]), prod_Churn[Customer_Status] = "Joined")
+```
+20.Created a new measure ```Total Churn``` using DAX formula.
+``` dax
+Total Churn = SUM(prod_Churn[Churn_Status])
+```
+21.Created a new measure ```Churn Rate``` using DAX formula.
+``` dax
+Churn Rate = [Total Churn] / [Total Customers]
+```
+22.Created a new measure ```Percent of Row Total``` using DAX formula.
+``` dax
+Percent of Row Total = 
+ DIVIDE(
+     SUM('prod_Services'[Churn_Status]),
+ CALCULATE(
+    SUM('prod_Services'[Churn_Status]),
+ ALLEXCEPT('prod_Services', 'prod_Services'[Services])
+  )
+)
+```
+23.Created a Power BI report Churn Analysis - Summary using various visualizations.
+
+- Note: Please refer `Reports` folder above for reports pdf.
+
+
+
+
+
 
 
 
