@@ -126,6 +126,38 @@ Percent of Row Total =
 
 - Note: Please refer `Reports` folder above for reports pdf.
 
+### Python (Jupyter Notebook)
+23.Connected SQL database to Jupyter Notebook.
+24.Performed predictive analytics using machine learning algorithm ```Random Forest.```
+25.Trained our model on ```vw_ChurnData``` view created earlier on Step 5 and achieved an accuracy of 84%.
+26.Tested our model on ```vw_JoinData``` view created earlier on Step 5.
+27.Exporting the ```Predictions``` table into the SQL database using ```to_sql.```
+
+- Note: Please refer `Jupyter Notebook` folder above for detailed machine learning code.
+
+## PowerBI
+---
+28.Imported the ```Predictions``` table from SQL Server to Power BI.
+29.Created a new measure ```Count Predicted Churner``` using DAX formula.
+``` dax
+Count Predicted Churner = COUNT(Predictions[Customer_ID]) + 0
+```
+30.Created a new measure ```Title Predicted Churner``` using DAX formula.
+``` dax
+Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[Customer_ID])
+```
+31.Created a Power BI report ```Churn Analysis - Prediction``` using various visualizations.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
