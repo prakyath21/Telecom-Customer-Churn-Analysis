@@ -154,7 +154,7 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 ---
 ![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Churn_Analysis%20Summary.png?raw=true)
 
-![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Churn_Analysis_Prediction.png?raw=true)
+![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Predicted_SS.png?raw=true)
 
 ---
 ## Predictions
@@ -165,8 +165,8 @@ After training our model, these were the predictions it made:
 
 - **Count of Predicted Churners**: 378 people are predicted to churn in the future.
 - **Gender Breakdown**:
-  - 246 females
-  - 132 males
+  - 247 females
+  - 133 males
 - **Age Group**:  
   - The largest group (135) of predicted churners are older than 50 years.
 - **Marital Status**:  
