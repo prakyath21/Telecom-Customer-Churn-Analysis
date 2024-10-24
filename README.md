@@ -156,6 +156,20 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 
 ![Alt text](https://github.com/prakyath21/Telecom-Customer-Churn-Analysis/blob/main/Reports/Churn_Analysis_Prediction.png?raw=true)
 
+---
+## Predictions
+---
+After training our model, these were the predictions our model made:
+ 1.Count of people who will churn in future (Predicted Churners) was found to be 378.
+ 2.Out of 378 predicted churners, 246 were females and 132 were males.
+ 3.Maximum number (135) of predicted churners were of the age group greater than 50.
+ 4.Maximum number (193) of predicted churners were unmarried.
+ 5.Maximum number (106) of predicted churners were those who were having their tenure group equal to or greater than 2 years.
+ 6.Maximum number (192) of predicted churners were those who were using credit card services.
+ 7.Maximum number (355) of predicted churners were those who were having month-to-month contract.
+ 8.Maximum number (44) of predicted churners were from Uttar Pradesh, followed by Maharashtra(40), Tamil Nadu(37), Karnataka(29), and Andhra Pradesh(24).
+
+
 
 
 
