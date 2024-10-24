@@ -159,15 +159,30 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 ---
 ## Predictions
 ---
-After training our model, these were the predictions our model made:
- -Count of people who will churn in future (Predicted Churners) was found to be 378.
- -Out of 378 predicted churners, 246 were females and 132 were males.
- -Maximum number (135) of predicted churners were of the age group greater than 50.
- -Maximum number (193) of predicted churners were unmarried.
- -Maximum number (106) of predicted churners were those who were having their tenure group equal to or greater than 2 years.
- -Maximum number (192) of predicted churners were those who were using credit card services.
- -Maximum number (355) of predicted churners were those who were having month-to-month contract.
- -Maximum number (44) of predicted churners were from Uttar Pradesh, followed by Maharashtra(40), Tamil Nadu(37), Karnataka(29), and Andhra Pradesh(24).
+## Model Predictions
+
+After training our model, these were the predictions it made:
+
+- **Count of Predicted Churners**: 378 people are predicted to churn in the future.
+- **Gender Breakdown**:
+  - 246 females
+  - 132 males
+- **Age Group**:  
+  - The largest group (135) of predicted churners are older than 50 years.
+- **Marital Status**:  
+  - 193 predicted churners are unmarried.
+- **Tenure**:  
+  - 106 predicted churners have a tenure of 2 years or more.
+- **Service Usage**:  
+  - 192 predicted churners use credit card services.
+- **Contract Type**:  
+  - 355 predicted churners have a month-to-month contract.
+- **Geographical Distribution**:
+  - **Uttar Pradesh**: 44 predicted churners
+  - **Maharashtra**: 40 predicted churners
+  - **Tamil Nadu**: 37 predicted churners
+  - **Karnataka**: 29 predicted churners
+  - **Andhra Pradesh**: 24 predicted churners
 
 
 
