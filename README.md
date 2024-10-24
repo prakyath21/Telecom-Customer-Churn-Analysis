@@ -148,6 +148,12 @@ Title Predicted Churner = "COUNT OF PREDICTED CHURNERS : " & COUNT(Predictions[C
 ```
 31.Created a Power BI report ```Churn Analysis - Prediction``` using various visualizations.
 
+---
+#PowerBI Dashboard
+
+---
+
+("C:\Users\praky\Downloads\Churn_Analysis Summary.png")
 
 
 
